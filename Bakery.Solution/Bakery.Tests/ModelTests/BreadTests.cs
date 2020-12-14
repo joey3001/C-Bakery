@@ -28,16 +28,9 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void OrderCalculator_CalculateCostOfAmountOfLoafsThatAreAMultipleOf3_50()
+    public void OrderCalculator_CalculateCostOfAmountOfLoafs_50()
     {
       BreadOrder newBreadOrder = new BreadOrder(15);
-      Assert.AreEqual(50, newBreadOrder.OrderCost());
-    }
-
-    [TestMethod]
-    public void OrderCalculator_CalculateCostOfAmountOfLoafsThatAreNotAMultipleOf3_50()
-    {
-      BreadOrder newBreadOrder = new BreadOrder(14);
       Assert.AreEqual(50, newBreadOrder.OrderCost());
     }
   }
