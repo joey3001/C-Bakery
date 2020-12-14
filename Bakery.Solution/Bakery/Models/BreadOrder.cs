@@ -8,11 +8,11 @@ namespace Bakery.Models
     {
       get
       {
-          return _costPerLoaf; 
+        return _costPerLoaf; 
       }
       set
       {
-          _costPerLoaf = 5; 
+        _costPerLoaf = 5; 
       }
     }
     public int NumberOfLoafs { get; set; }
