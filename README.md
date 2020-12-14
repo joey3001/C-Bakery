@@ -67,7 +67,7 @@ This application utilizes custom classes and namespaces to determine the cost of
 
 #### To view the code in the VSCode editor using commands in the terminal :  
 
-1. Navigate to the project's root directory with the cd command if needed. If you're following this guide step-by-step, you should already be there. 
+1. Navigate to the project's root directory with the cd command. 
 
 2. Once you are within the project's root directory, enter the following command into your terminal program to view all of the project's code in VSCode : 
 
