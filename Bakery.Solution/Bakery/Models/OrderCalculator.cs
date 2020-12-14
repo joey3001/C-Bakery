@@ -4,9 +4,9 @@ namespace Bakery.Models
 {
   public class OrderCalculator
   {
-    public int TotalCost(int breadCost, int pastryCost)
+    public int TotalCost(int breadOrderCost, int pastryOrderCost)
     {
-      return breadCost + pastryCost; 
+      return breadOrderCost + pastryOrderCost; 
     }
   }
 }
