@@ -31,7 +31,7 @@ This application utilizes custom classes and namespaces to determine the cost of
     - If no version number is presented, visit [this website](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-2.2.203-windows-x64-installer) to download C# & .NET Core. Once the download is complete, you can execute "dotnet --version" in your terminal again to verify its successful installation. 
 
 5. dotnet script REPL
-    - The dotnet script REPL allows you to run compiled code one line at a time. To install dotnet script enter the following command into your terminal program (only do this after completing step 1 above) : 
+    - The dotnet script REPL allows you to run compiled code one line at a time. To install dotnet script enter the following command into your terminal program (only do this after completing the above step) : 
 
             dotnet tool install -g dotnet-script
 
