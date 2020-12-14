@@ -31,7 +31,7 @@ namespace Bakery.Tests
     public void OrderCost_CalculateOrderCostsForPastries_15()
     {
       PastryOrder newPastryOrder = new PastryOrder(9);
-      Assert.AreEqual(10, newPastryOrder.OrderCost());
+      Assert.AreEqual(15, newPastryOrder.OrderCost());
     }
   }
 }
