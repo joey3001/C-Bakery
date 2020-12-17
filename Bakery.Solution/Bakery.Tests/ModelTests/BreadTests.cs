@@ -9,29 +9,57 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadOrder_CreateInstanceOfBreadOrder_BreadOrder()
     {
-      BreadOrder newBreadOrder = new BreadOrder(2);
+      int numberOfLoafs = 2; 
+
+      BreadOrder newBreadOrder = new BreadOrder(numberOfLoafs);
+
       Assert.AreEqual(typeof(BreadOrder), newBreadOrder.GetType());
     }
 
     [TestMethod]
-    public void BreadOrder_ProvideInputForNumberOfLoafs_2()
+    public void BreadOrder_ProvideInputForNumberOfLoafs_int()
     {
-      BreadOrder newBreadOrder = new BreadOrder(2);
-      Assert.AreEqual(2, newBreadOrder.NumberOfLoafs);
+      int numberOfLoafs = 2; 
+      int intendedNumberOfLoafs = 2; 
+
+      BreadOrder newBreadOrder = new BreadOrder(numberOfLoafs);
+
+      Assert.AreEqual(intendedNumberOfLoafs, newBreadOrder.NumberOfLoafs);
     }
 
     [TestMethod]
-    public void BreadOrder_SetCostPerLoafTo5_5()
+    public void BreadOrder_SetCostPerLoafTo5_int()
     {
-      BreadOrder newBreadOrder = new BreadOrder(2);
-      Assert.AreEqual(5, newBreadOrder.CostPerLoaf);
+      int loafsOfBread = 2; 
+      int intendedCostPerLoaf = 5; 
+
+      BreadOrder newBreadOrder = new BreadOrder(loafsOfBread);
+
+      Assert.AreEqual(intendedCostPerLoaf, newBreadOrder.CostPerLoaf);
     }
 
     [TestMethod]
-    public void OrderCalculator_CalculateCostOfAmountOfLoafs_50()
+    public void OrderCost_CalculateCostOfAmountOfLoafsWithoutDiscount_int()
     {
-      BreadOrder newBreadOrder = new BreadOrder(15);
-      Assert.AreEqual(50, newBreadOrder.OrderCost());
+      int loafsOfBread = 2;
+      int intendedOrderCost = 10; 
+
+      BreadOrder newBreadOrder = new BreadOrder(loafsOfBread);
+      int breadOrderCost = newBreadOrder.OrderCost(); 
+
+      Assert.AreEqual(intendedOrderCost, breadOrderCost);
+    }
+
+    [TestMethod]
+    public void OrderCost_CalculateCostOfAmountOfLoafsWithDiscount_int()
+    {
+      int loafsOfBread = 3;
+      int intendedOrderCost = 10; 
+
+      BreadOrder newBreadOrder = new BreadOrder(loafsOfBread);
+      int breadOrderCost = newBreadOrder.OrderCost(); 
+
+      Assert.AreEqual(intendedOrderCost, breadOrderCost);
     }
   }
 }
