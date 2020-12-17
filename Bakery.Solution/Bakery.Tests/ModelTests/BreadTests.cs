@@ -23,8 +23,9 @@ namespace Bakery.Tests
       int intendedNumberOfLoafs = 2; 
 
       BreadOrder newBreadOrder = new BreadOrder(numberOfLoafs);
+      numberOfLoafs = newBreadOrder.NumberOfLoafs; 
 
-      Assert.AreEqual(intendedNumberOfLoafs, newBreadOrder.NumberOfLoafs);
+      Assert.AreEqual(intendedNumberOfLoafs, numberOfLoafs);
     }
 
     [TestMethod]

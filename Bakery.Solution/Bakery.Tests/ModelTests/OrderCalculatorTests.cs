@@ -15,16 +15,22 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void TotalCost_AddTwoNumbersTogether_int()
+    public void TotalCost_AddCostOfPastryOrderToCostOfBreadOrderToCalculateTotalOrderCost_int()
     {
-      int firstNumber = 14; 
-      int secondNumber = 16; 
-      int intendedSum = 30; 
+      int intendedTotalOrderCost = 15; 
+
+      int numberOfPastries = 3;
+      PastryOrder newPastryOrder = new PastryOrder(numberOfPastries);
+      int pastryOrderCost = newPastryOrder.OrderCost(); 
+
+      int loafsOfBread = 2;
+      BreadOrder newBreadOrder = new BreadOrder(loafsOfBread);
+      int breadOrderCost = newBreadOrder.OrderCost(); 
 
       OrderCalculator newOrderCalculator = new OrderCalculator();
-      int calculatedSum = newOrderCalculator.TotalCost(firstNumber, secondNumber);
-      
-      Assert.AreEqual(intendedSum, calculatedSum);
+      int totalOrderCost = newOrderCalculator.TotalCost(breadOrderCost, pastryOrderCost);
+
+      Assert.AreEqual(intendedTotalOrderCost, totalOrderCost);
     }
   }
 }
