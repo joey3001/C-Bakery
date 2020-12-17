@@ -23,8 +23,8 @@ namespace Bakery.Tests
       PastryOrder newPastryOrder = new PastryOrder(numberOfPastries);
       int pastryOrderCost = newPastryOrder.OrderCost(); 
 
-      int loafsOfBread = 2;
-      BreadOrder newBreadOrder = new BreadOrder(loafsOfBread);
+      int numberOfLoafs = 2;
+      BreadOrder newBreadOrder = new BreadOrder(numberOfLoafs);
       int breadOrderCost = newBreadOrder.OrderCost(); 
 
       OrderCalculator newOrderCalculator = new OrderCalculator();

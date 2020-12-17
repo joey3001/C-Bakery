@@ -35,8 +35,9 @@ namespace Bakery.Tests
       int intendedCostPerLoaf = 5; 
 
       BreadOrder newBreadOrder = new BreadOrder(numberOfLoafs);
+      int costPerLoaf = newBreadOrder.CostPerLoaf; 
 
-      Assert.AreEqual(intendedCostPerLoaf, newBreadOrder.CostPerLoaf);
+      Assert.AreEqual(intendedCostPerLoaf, costPerLoaf);
     }
 
     [TestMethod]
