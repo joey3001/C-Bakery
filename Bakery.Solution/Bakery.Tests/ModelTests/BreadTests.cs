@@ -17,7 +17,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void BreadOrder_ProvideInputForNumberOfLoafs_int()
+    public void BreadOrder_ProvideInputForNumberOfLoafsToPurchaseInBreadOrder_int()
     {
       int numberOfLoafs = 2; 
       int intendedNumberOfLoafs = 2; 
