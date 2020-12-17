@@ -10,14 +10,21 @@ namespace Bakery.Tests
     public void OrderCalculator_CreateInstanceOfOrderCalculator_OrderCalculator()
     {
       OrderCalculator newOrderCalculator = new OrderCalculator();
+
       Assert.AreEqual(typeof(OrderCalculator), newOrderCalculator.GetType());
     }
 
     [TestMethod]
-    public void TotalCost_AddTwoNumbersTogether_30()
+    public void TotalCost_AddTwoNumbersTogether_int()
     {
+      int firstNumber = 14; 
+      int secondNumber = 16; 
+      int intendedSum = 30; 
+
       OrderCalculator newOrderCalculator = new OrderCalculator();
-      Assert.AreEqual(30, newOrderCalculator.TotalCost(14, 16));
+      int calculatedSum = newOrderCalculator.TotalCost(firstNumber, secondNumber);
+      
+      Assert.AreEqual(intendedSum, calculatedSum);
     }
   }
 }
