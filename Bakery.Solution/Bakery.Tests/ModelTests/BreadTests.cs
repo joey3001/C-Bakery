@@ -31,33 +31,33 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadOrder_SetCostPerLoafTo5_int()
     {
-      int loafsOfBread = 2; 
+      int numberOfLoafs = 2; 
       int intendedCostPerLoaf = 5; 
 
-      BreadOrder newBreadOrder = new BreadOrder(loafsOfBread);
+      BreadOrder newBreadOrder = new BreadOrder(numberOfLoafs);
 
       Assert.AreEqual(intendedCostPerLoaf, newBreadOrder.CostPerLoaf);
     }
 
     [TestMethod]
-    public void OrderCost_CalculateCostOfAmountOfLoafsWithoutDiscount_int()
+    public void OrderCost_CalculateCostOfBreadOrderWithoutDiscount_int()
     {
-      int loafsOfBread = 2;
+      int numberOfLoafs = 2;
       int intendedOrderCost = 10; 
 
-      BreadOrder newBreadOrder = new BreadOrder(loafsOfBread);
+      BreadOrder newBreadOrder = new BreadOrder(numberOfLoafs);
       int breadOrderCost = newBreadOrder.OrderCost(); 
 
       Assert.AreEqual(intendedOrderCost, breadOrderCost);
     }
 
     [TestMethod]
-    public void OrderCost_CalculateCostOfAmountOfLoafsWithDiscount_int()
+    public void OrderCost_CalculateCostOfBreadOrderWithDiscount_int()
     {
-      int loafsOfBread = 3;
+      int numberOfLoafs = 3;
       int intendedOrderCost = 10; 
 
-      BreadOrder newBreadOrder = new BreadOrder(loafsOfBread);
+      BreadOrder newBreadOrder = new BreadOrder(numberOfLoafs);
       int breadOrderCost = newBreadOrder.OrderCost(); 
 
       Assert.AreEqual(intendedOrderCost, breadOrderCost);

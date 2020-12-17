@@ -41,7 +41,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void OrderCost_CalculateCostOfAmountOfPastriesWithoutDiscount_int()
+    public void OrderCost_CalculateCostOfPastryOrderWithoutDiscount_int()
     {
       int numberOfPastries = 2;
       int intendedOrderCost = 4; 
@@ -53,7 +53,7 @@ namespace Bakery.Tests
     }
 
    [TestMethod]
-    public void OrderCost_CalculateCostOfAmountOfPastriesWithDiscount_int()
+    public void OrderCost_CalculateCostOfPastryOrderWithDiscount_int()
     {
       int numberOfPastries = 3;
       int intendedOrderCost = 5; 
