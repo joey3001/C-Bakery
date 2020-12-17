@@ -15,7 +15,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void TotalCost_AddCostOfPastryOrderToCostOfBreadOrderToCalculateTotalOrderCost_int()
+    public void TotalCost_AddCostOfPastryOrderToCostOfBreadOrderToCalculateTotalCostOfOrder_int()
     {
       int intendedTotalOrderCost = 15; 
 
